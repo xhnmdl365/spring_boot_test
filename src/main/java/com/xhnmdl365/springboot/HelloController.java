@@ -23,7 +23,11 @@ public class HelloController {
 	public String hello() {
 		return "hello";
 	}
-
+	@RequestMapping("/")
+	public String index() {
+		System.out.println("1234");
+		return "hello";
+	}
 
 	@RequestMapping("/getDemo")
 	public Demo getDemo() {
